@@ -1,4 +1,5 @@
-image: pongso/trilateration
+image:
+  file: pongso/trilateration
 ports:
 - port: 8888
   onOpen: open-preview
