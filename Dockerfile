@@ -1,3 +1,3 @@
-FROM gitpod/workspace-full
+FROM pongso/trilateration
 
 # add your tools here ...
