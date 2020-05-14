@@ -1,8 +1,7 @@
-# exposed ports
+image: pongso/trilateration
 ports:
-- port: 8080
+- port: 8888
   onOpen: open-preview
 # start up tasks
 tasks:
 - init: ./mvnw package -DskipTests
-  command: java -jar target/*.jar
