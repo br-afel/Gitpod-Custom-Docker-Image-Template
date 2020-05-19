@@ -1,5 +1,4 @@
 image:
   file: Dockerfile
 tasks:
-  - command: redis-server
-
+  - command: /bin/bash
