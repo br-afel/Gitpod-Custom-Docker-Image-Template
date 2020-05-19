@@ -1,1 +1,1 @@
-FROM 
+FROM gitlab/dind
