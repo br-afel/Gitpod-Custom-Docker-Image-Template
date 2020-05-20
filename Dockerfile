@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 LABEL maintainer="Alexis Ahmed"
 
 # Environment Variables
-ENV HOME /root
+ENV HOME /home/gitpod/
 ENV DEBIAN_FRONTEND=noninteractive
 
 
