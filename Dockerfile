@@ -9,8 +9,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Working Directory
 WORKDIR /root
-RUN mkdir /home/gitpod//toolkit && \
-    mkdir /home/gitpod//wordlists
+RUN mkdir /home/gitpod/toolkit && \
+    mkdir /home/gitpod/wordlists
 
 # Install Essentials
 RUN apt-get update && \
