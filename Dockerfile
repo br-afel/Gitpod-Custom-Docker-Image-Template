@@ -9,8 +9,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Working Directory
 WORKDIR /root
-RUN mkdir /home/gitpod/toolkit && \
-    mkdir /home/gitpod/wordlists
+RUN mkdir /home/toolkit && \
+    mkdir /home/wordlists
 
 # Install Essentials
 RUN apt-get update && \
@@ -47,17 +47,17 @@ RUN apt-get update && \
  
 
 # Sublist3r
-RUN cd /home/gitpod/toolkit && \
+RUN cd /home/toolkit && \
     git clone https://github.com/aboul3la/Sublist3r.git && \
     cd Sublist3r/ && \
     pip install -r requirements.txt && \
-    ln -s /home/gitpod/toolkit/Sublist3r/sublist3r.py /usr/local/bin/sublist3r
+    ln -s /home/toolkit/Sublist3r/sublist3r.py /usr/local/bin/sublist3r
 
  
 # massdns
-RUN cd /home/gitpod/toolkit && \
+RUN cd /home/toolkit && \
     git clone https://github.com/blechschmidt/massdns.git && \
     cd massdns/ && \
     make && \
-    ln -sf /home/gitpod/toolkit/massdns/bin/massdns /usr/local/bin/massdns
+    ln -sf /home/toolkit/massdns/bin/massdns /usr/local/bin/massdns
  
